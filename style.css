@@ -4,63 +4,236 @@
 }
 
 header {
-    width: 90%;
-    height: 400px;
-    background-image: url(paprika-3212148__480.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.box4 {
+    background-color: #4d4d4d;
+}
+
+p {
+    position: absolute;
+}
+
+p {
+    font: 50px/1.2 'Courgette', cursive;
+    color: #fff;
+    text-align: center;
+    top: 100px;
+    left: 45%;
+    z-index: 1;
+}
+
+
+#box1 {
+    width: 50%;
+    height: 100%;
+    margin: 0px 0px 0px 50%;
+}
+
+#box1::before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: url(carrots-1508847__480.jpg) no-repeat center center;
     background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
-@import url(style.css) screen and (min-width: 769px); /* 769以上 */
-@import url(tablet.css) screen and (max-width: 768px); /* 768以下 */
-@import url(smart.css) screen and (max-width: 320px); /* 320以下 */
-
-.one {
-    margin: 30px;
+#box1 h1 {
+    position: relative;
+    height: 100%;
 }
+
+#box1 h1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.circle-1 {
+    position: absolute;
+    width: 280px;
+    height: 300px;
+    left: 40%;
+    background: #f66;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+    animation: border-animetion 6s infinite linear;
+}
+
+.circle-2 {
+    position: absolute;
+    width: 280px;
+    height: 300px;
+    left: 40%;
+    background: #f92;
+    border-radius: 80% 30% 50% 50%/50%;
+    animation: border-animation 4s infinite linear;
+}
+
+.circle-3 {
+    position: absolute;
+    width: 280px;
+    height: 300px;
+    left: 40%;
+    background: #fc2;
+    border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+    animation: border-animation 3s infinite linear;
+}
+
+
+/* Animation */
+
+@keyframes border-animation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@import url(style.css) screen and (min-width: 769px);
+/* 769以上 */
+
+@import url(tablet.css) screen and (max-width: 768px);
+/* 768以下 */
+
+@import url(smart.css) screen and (max-width: 320px);
+/* 320以下 */
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 30px;
+    font-size: 170px;
+    z-index: -1;
+    position: absolute;
+    color: rgba(134, 134, 134, 0.83);
+}
+
 .graf {
     float: left;
+    margin-left: 55px;
+    margin-right: 73px;
+}
+
+.square {
+    width: 297px;
+    height: 350px;
+    background-image: url(7551_b1.png);
+    background-size: cover;
+    align-items: center
+}
+
+.box7 {
+    width: 170px;
+    height: 100px;
+    padding: 1.5em;
+    margin-left: 60px;
+    border: double 5px #4d4d4d;
 }
 
 .test {
     float: left;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.point {
+    width: 250px;
+    height: 292px;
+    background-image: url(9614543_01.png);
+    background-size: cover;
+    margin-top: 29px;
+}
+
+.box8 {
+    width: 170px;
+    height: 100px;
+    padding: 1.5em;
+    margin-left: 33px;
+    margin-top: 30px;
+    border: double 5px #4d4d4d;
+
 }
 
 .check {
     float: left;
-}
-.retry {
-    float: left;
-}
-
-.chart {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    background-color: #9bffe8;
-    margin: 75px;
-
+    margin-left: 55px;
+    margin-right: 55px;
 }
 
-.square {
+.box9 {
+    width: 170px;
+    height: 100px;
+    padding: 1.5em;
+    margin-left: 60px;
+    border: double 5px #4d4d4d;
+}
+
+
+
+.text {
     width: 250px;
     height: 350px;
-    background: #d01c1c;
-    margin: 60px;
+    background-image: url(7624_b1.png);
+    background-size: cover;
 
 }
+
 
 img {
-    margin: 54px;
+    margin-left: 250px;
+    margin-top: 170px;
 }
 
-h2 {
-    height: 450px;
-    width: 1100px;
-    font-size: 100px;
-    font-family: 'Bangers', cursive;
-    font-family: 'Playfair Display SC', serif;
-    margin: 100px;
-    text-align: center;
-    padding-top: 200px;
-    color: #ffffff;
+
+
+
+.boo {
+    float: left;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 200px;
+}
+
+.pop {
+    width: 153px;
+    height: 369px;
+    background-image: url(9817773_3L1.png);
+    background-size: cover;
+
+}
+
+
+.mmm {
+    float: left;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 200px;
+}
+
+.grant {
+    width: 153px;
+    height: 360px;
+    background-image: url(1818.png);
+    background-size: cover;
+
+}
+
+.wow {
+    float: left;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 200px;
+}
+
+.ph {
+    width: 153px;
+    height: 360px;
+    background-image: url(3573581_3L2.png);
+    background-size: cover;
 }
