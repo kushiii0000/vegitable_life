@@ -1,65 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <title>野菜生活</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <!--    <link rel="stylesheet" href="style2.css">-->
     <link href="https://fonts.googleapis.com/css?family=Bangers|Playfair+Display+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Great+Vibes" rel="stylesheet">
+    <link rel="stylesheet" href="ress.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.inview.js"></script>
+    <script type="text/javascript" src="anime.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.list-mv07').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+                if (isInView) {
+                    $(this).stop().addClass('mv07');
+                } else {
+                    $(this).stop().removeClass('mv07');
+                }
+            });
+        });
+    </script>
+
+
+
 
 
 </head>
 
 <body>
     <header>
-<div class="box4">
-        <p>野菜<br>ジュース</p>
-        <div class="circle-1"></div>
-        <div class="circle-2"></div>
-        <div class="circle-3"></div>
+
+        <div class="list">
+            <!--<li class="list-mv07"><img src="strawberry-2960533__480.jpeg"></li>
+	<li class="list-mv07"><img src="strawberry-2960533__480.jpeg"></li>
+	<li class="list-mv07"><img src="strawberry-2960533__480.jpeg"></li>-->
+        </div>
+        <div class="box4">
+            <p>野菜<br>ジュース</p>
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
         </div>
 
         <div id="box1">
             <h1>毎日の健康に<br>一日一本<br></h1>
         </div>
-        
+
     </header>
 
 
+
     <h2>KAGOME</h2>
-
-
-
     <div class="square"></div>
     <div class="point"></div>
     <div class="text"></div>
 
-    <div id="box2">
-        <h4>KAGOME野菜生活オリジナルの美味しさ<br>野菜ジュースの定番</h4>
-        
+    <h4>KAGOME<br>野菜生活オリジナルの美味しさ野菜ジュースの定番</h4>
+    <div class="boxR">
+        <img src="orijinaru.png" alt="" width="90%"></div>
+
+    <div id="box3">
+        <div class="textAnimation">
+            <h5>野菜生活<br>100年の歴史</h5>
+        </div>
+        <img src="vegetables-2977888__480.jpg" alt="">
     </div>
+    <!--
+    <div class="explain">
+
+        <a href="http://www.kagome.co.jp/" class="square_btn">KAGOME公式HP</a>
+
+    </div>
+    -->
+    <div id="box7">
+        <h7>KAGOMEは<br><br>様々な種類の野菜生活をお届けしています。<br>美味しさを提供し続けて約100年<br>今もなおより良い商品を作るために改良を続けています。KAGOMEの野菜ジュースはどっしりとした野菜感溢れる味ではなく、誰にでも楽しんでいただけるようにスッキリと甘く飲みやすい、親しみやすい味です。野菜が苦手な方でもお飲みいただけると思います。</h7>
+    </div>
+
+
     <div class="clear"></div>
-    <h3></h3>
 
-   
-   
-<!--
-    <div class="pop"></div>
-    <div class="grant"></div>
-    <div class="ph"></div>
--->
+    <div class="itouenn">
+        <h3>ITOEN</h3>
+
+        <div class="on"></div>
+        <div class="tw"></div>
+        <div class="the"></div>
 
 
+        <div id="box5">
+            <div class="wrap">
+                <div class="cover"></div>
+                <div class="textAnimation">
+
+                    <h6>充実野菜<br>野菜たっぷりで<br>どっしり味わえる</h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="sss"></div>
+
+    <div id="box10">
+
+        <div class="ttt"></div>
+        <div class="mmm"></div>
+        <div class="rrr"></div>
+        <div class="vvv"></div>
+    </div>
+
+    <div class="boxQ">
+        <img src="itouennoj.png" alt="" width="90%">
+    </div>
+
+    <div id="box11">
+        <div class="mom"></div>
+        <div class="non"></div>
+        <div class="bob"></div>
+
+        <h8>野菜ジュースはあくまで栄養を補助する<br>サプリメントのような存在です<br>本来は野菜ジュースを飲まず野菜を摂取<br>するのが一番いいのです。そんな私は<br>野菜ジュースを飲み始めて11年経ちます<br>飲みすぎると肌が黄色になりますよ</h8>
+    </div>
+    <!-- 
+    <div class="list">
+	<li class="list-mv07"><img src="carrot.jpg"></li>
+	<li class="list-mv07"><img src="strawberry-2960533__480.jpeg"></li>
+	<li class="list-mv07"><img src="strawberry-2960533__480.jpeg"></li>
+</div>-->
+    <div class="clear"></div>
 
 
 
+    <div class="wrap">
+        <div class="cover"></div>
+        <div class="textAnimation">Animation</div>
+    </div>
+
+    <script type="text/javascript">
+        var wrap = document.getElementsByClassName("wrap")[0];
+        var cover = wrap.getElementsByClassName("cover")[0];
+        var text = wrap.getElementsByClassName("textAnimation")[0];
 
 
+        var timeline = anime.timeline();
+        timeline.add({
+            targets: cover,
+            duration: 500,
+            easing: "easeInExpo",
+            begin: () => {
+                cover.style.transformOrigin = "left";
+                text.style.visibility = "hidden";
+            },
+            scaleX: [0, 1]
+        }).add({
+            targets: cover,
+            duration: 500,
+            easing: "easeOutExpo",
+            begin: () => {
+                cover.style.transformOrigin = "right";
+                text.style.visibility = "visible";
+            },
+            scaleX: [1, 0]
+        });
+    </script>
 
-    <img src="food-3074026__480.jpg">
-    <h3></h3>
 </body>
 
 </html>
